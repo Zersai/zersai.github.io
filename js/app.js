@@ -22,6 +22,12 @@ function vibrateSimple() {
 function vibratePattern() {
   navigator.vibrate([100, 200, 200, 200, 500]);
 }
+
+function getConnection() {
+  return navigator.connection || navigator.mozConnection ||
+    navigator.webkitConnection || navigator.msConnection;
+}
+
 function updateNetworkInfo(info) {
   document.getElementById('networkType').innerHTML = info.type;
   document.getElementById('effectiveNetworkType').innerHTML = info.effectiveType;
