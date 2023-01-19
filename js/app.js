@@ -33,4 +33,4 @@ if (info) {
   info.onchange = function (event) {
     updateNetworkInfo(event.target);
   }
-  updateNetworkInfo(info);
+  updateNetworkInfo(info);}
